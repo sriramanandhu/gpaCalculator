@@ -56,6 +56,13 @@ function calcBtnOnClick(e) {
     let gpa_span = document.getElementById("result-gpa");
     gpa_span.textContent = gpaCalculated.toFixed(3);
 
+    // credits, total credits
+    let result_credits_gained = document.getElementById("result-credits-gained");
+    result_credits_gained.textContent = totalPointsGained;
+
+    let result_total_credits = document.getElementById("result-total-credits");
+    result_total_credits.textContent = totalCredits;
+
     // scroll to result_div
     result_div.scrollIntoView();
 }
